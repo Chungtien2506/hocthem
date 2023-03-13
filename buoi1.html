@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function sum(arr){
+    let a=0;
+    for(let i=0;i<arr.length;i++){
+      if(arr[i]%5===0){
+        a +=arr[i];
+      }
+    }return a;
+  }
+  document.write(sum([5,6,7,100,10,15]))
+  function chiahet(arr){
+    let  arr1=[]
+    for(let i=0; i<arr.length;i++){
+      if(arr[i]%5===0){
+        arr1.push(arr[i])
+      }
+    }return arr1;
+  }
+  document.write(chiahet([5,6,7,100,10,15]))
+  function thay(arr,n){
+    arr[0]=n-1;
+  }
+  document.write(thay([5,6,7,10,15],100))
+
+</script>
+</body>
+</html>
